@@ -22,13 +22,13 @@ tabspaces: 4
 
 font:
   normal:
-    family: Inconsolata Nerd Font Mono
+    family: Jetbrains Mono
   bold:
-    family: Inconsolata Nerd Font Mono
+    family: Jetbrains Mono
   italic:
-    family: Inconsolata Nerd Font Mono
+    family: Jetbrains Mono
   bold_italic:
-    family: Inconsolata Nerd Font Mono
+    family: Jetbrains Mono
   size: 14.0
   use_thin_strokes: true
 

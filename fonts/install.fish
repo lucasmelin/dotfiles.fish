@@ -1,18 +1,19 @@
 #!/usr/bin/env fish
-if test -e ~/.local/share/fonts/Inconsolata[wdth,wght].ttf ||
-	test -e ~/Library/Fonts/Inconsolata[wdth,wght].ttf
+if test -e ~/.local/share/fonts/JetBrainsMono-Regular.ttf ||
+	test -e ~/Library/Fonts/JetBrainsMono-Regular.ttf
 	exit 0
 end
 
 function install
-	curl -Lso $argv[1]/Inconsolata[wdth,wght].ttf https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata%5Bwdth%2Cwght%5D.ttf
+	curl -Lso /tmp/mono.zip https://github.com/JetBrains/JetBrainsMono/releases/download/v1.0.6/JetBrainsMono-1.0.6.zip
+	unzip -j /tmp/mono.zip '*/ttf/*' -d "$1"
 end
 
 switch (uname)
 case Darwin
 	if command -qs brew
 		brew tap -q homebrew/cask-fonts
-			and brew install --cask font-inconsolata
+			and brew install --cask font-jetbrains-mono
 	else
 		install ~/Library/Fonts
 	end

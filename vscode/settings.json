@@ -1,14 +1,17 @@
 {
-	"editor.fontSize": 18,
+	"editor.fontSize": 16,
 	"editor.fontLigatures": true,
-	"editor.rulers": [
-		80,
-		120
-	],
+	"[python]": {
+        "editor.rulers": [80, 88]
+    },
+	"files.watcherExclude": {
+        "**/.nox/*": true,
+        "**/.pytest_cache/**": true
+    },
 	"editor.tabSize": 4,
 	"editor.trimAutoWhitespace": true,
 	"editor.tabCompletion": "on",
-	"editor.fontFamily": "'Inconsolata', Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontFamily": "'Jetbrains Mono', 'Courier New', monospace",
 	"editor.smoothScrolling": true,
 	"editor.formatOnSave": true,
 	"editor.inlineSuggest.enabled": true,
@@ -71,7 +74,7 @@
 	},
 	"go.testFlags": [
 		"-test.failfast",
-		"-v",
+		"-v"
 	],
 	"files.exclude": {
 		"yarn.lock": true,
@@ -109,9 +112,9 @@
 	},
 	"redhat.telemetry.enabled": false,
 	"yaml.format.enable": false,
-	"terminal.integrated.fontFamily": "'Inconsolata Nerd Font Mono'",
+	"terminal.integrated.fontFamily": "'Jetbrains Mono'",
 	"terminal.external.osxExec": "iTerm.app",
-	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.inheritEnv": true,
 	"terminal.integrated.cursorStyle": "line",
@@ -139,5 +142,6 @@
 	},
 	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.startupPrompt": "never",
-	"security.workspace.trust.enabled": false
+	"security.workspace.trust.enabled": false,
+	"editor.bracketPairColorization.enabled": true
 }

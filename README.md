@@ -116,20 +116,9 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 sudo apt install fish grc fzf zoxide
 ```
 
-## macOS defaults
-
-You use it by running:
-
-```console
-~/.dotfiles/macos/set-defaults.sh
-```
-
-And logging out and in again or restart.
-
 ## Themes and fonts being used
 
-Theme is **[Dracula](https://draculatheme.com)** and font is **Inconsolata**
-Nerd Font.
+Theme is **[Dracula](https://draculatheme.com)** and font is **Jetbrains Mono**.
 
 ## Screenshots
 

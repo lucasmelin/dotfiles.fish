@@ -141,7 +141,7 @@ test (which fish) = $SHELL
 	and success 'dotfiles installed/updated!'
 	and exit 0
 
-chsh -s (which fish)
+chsh -s "/usr/bin/fish"
 	and success set (fish --version) as the default shell
 	or abort 'set fish as default shell'
 
