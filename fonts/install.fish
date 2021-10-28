@@ -5,7 +5,7 @@ if test -e ~/.local/share/fonts/JetBrainsMono-Regular.ttf ||
 end
 
 function install
-	curl -Lso /tmp/mono.zip https://github.com/JetBrains/JetBrainsMono/releases/download/v1.0.6/JetBrainsMono-1.0.6.zip
+	curl -Lso /tmp/mono.zip https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip?fromGitHub
 	unzip -j /tmp/mono.zip '*/ttf/*' -d "$1"
 end
 

@@ -2,16 +2,19 @@
 	"editor.fontSize": 16,
 	"editor.fontLigatures": true,
 	"[python]": {
-        "editor.rulers": [80, 88]
-    },
+		"editor.rulers": [
+			80,
+			88
+		]
+	},
 	"files.watcherExclude": {
-        "**/.nox/*": true,
-        "**/.pytest_cache/**": true
-    },
+		"**/.nox/*": true,
+		"**/.pytest_cache/**": true
+	},
 	"editor.tabSize": 4,
 	"editor.trimAutoWhitespace": true,
 	"editor.tabCompletion": "on",
-	"editor.fontFamily": "'Jetbrains Mono', 'Courier New', monospace",
+	"editor.fontFamily": "'JetBrainsMono Nerd Font', 'Courier New', monospace",
 	"editor.smoothScrolling": true,
 	"editor.formatOnSave": true,
 	"editor.inlineSuggest.enabled": true,
@@ -42,12 +45,6 @@
 	},
 	"breadcrumbs.enabled": true,
 	"telemetry.telemetryLevel": "off",
-	"terraform.languageServer": {
-		"external": true,
-		"args": [
-			"serve"
-		]
-	},
 	"search.useGlobalIgnoreFiles": true,
 	"workbench.editor.highlightModifiedTabs": true,
 	"search.showLineNumbers": true,
@@ -99,20 +96,7 @@
 		"*.ipynb": "jupyter.notebook.ipynb"
 	},
 	"security.workspace.trust.untrustedFiles": "open",
-	"docker.showStartPage": false,
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": false,
-		"plaintext": true,
-		"markdown": false
-	},
-	"yaml.schemas": {
-		"/home/carlos/Developer/nfpm/www/docs/static/schema.json": "nfpm.yaml",
-		"/home/carlos/Developer/goreleaser/scripts/jsonschema/goreleaser.json": ".goreleaser.yml"
-	},
-	"redhat.telemetry.enabled": false,
-	"yaml.format.enable": false,
-	"terminal.integrated.fontFamily": "'Jetbrains Mono'",
+	"terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'Courier New', monospace",
 	"terminal.external.osxExec": "iTerm.app",
 	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.cursorBlinking": true,
@@ -143,5 +127,7 @@
 	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.startupPrompt": "never",
 	"security.workspace.trust.enabled": false,
-	"editor.bracketPairColorization.enabled": true
+	"editor.bracketPairColorization.enabled": true,
+	"git.autofetch": true,
+	"terminal.integrated.defaultProfile.linux": "fish"
 }
