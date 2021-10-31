@@ -1,33 +1,10 @@
 <p align="center">
   <img alt="header image" src="https://raw.githubusercontent.com/caarlos0/dotfiles.fish/master/docs/header.svg" height="350" />
-  <h2 align="center">carlos' dotfiles</h2>
-  <p align="center">Config files for Fish, Java, Ruby, Go, Editors, Terminals and more.</p>
+  <h2 align="center">lucasmelin's dotfiles</h2>
+  <p align="center">Config files for Fish, Editors, Terminals and more.</p>
 </p>
 
 ---
-
-Forked from my [ZSH dotfiles](https://github.com/caarlos0/dotfiles), those are
-my Fish Shell config files, together with editor, macOS configs and other
-goodies.
-
-The main reasons for the fork are:
-
-- a lot of things I have out of the box on Fish needed plugins on zsh
-- Fish autocompletion is awesome
-- Fish syntax is easier to use
-- Fish is more modern.
-
-This is an attempt to make the same things I had on my ZSH dotfiles on Fish.
-For the user, it should look pretty much the same, although under the hood
-there are a lot of changes.
-
-Config files are still topical, and even though aliases are not a thing on Fish,
-files are named like that still (and hold both functions and abbreviations).
-
-The auto-update feature was removed, as it was hacky on ZSH and I didn't want to
-do it. Instead, now the bootstrap script is better and can be run multiple times
-without any issues, so, to update, `git pull` and run the `bootstrap.fish`
-script.
 
 ## Installation
 
@@ -46,7 +23,7 @@ First, make sure you have all those things installed:
 Then, run these steps:
 
 ```console
-$ git clone https://github.com/caarlos0/dotfiles.fish.git ~/.dotfiles
+$ git clone https://github.com/lucasmelin/dotfiles.fish.git ~/.dotfiles
 $ cd ~/.dotfiles
 $ ./script/bootstrap.fish
 ```
@@ -113,7 +90,49 @@ On Ubuntu:
 
 ```console
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-sudo apt install fish grc fzf zoxide
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install unzip fish grc fzf bat delta exa gh fd-find ripgrep zoxide
+```
+
+## Windows Terminal
+
+Add the Dracula theme to the Windows Terminal `settings.json` in the `schema` section:
+
+```json
+{
+  "background": "#282A36",
+  "black": "#21222C",
+  "blue": "#BD93F9",
+  "brightBlack": "#6272A4",
+  "brightBlue": "#D6ACFF",
+  "brightCyan": "#A4FFFF",
+  "brightGreen": "#69FF94",
+  "brightPurple": "#FF92DF",
+  "brightRed": "#FF6E6E",
+  "brightWhite": "#FFFFFF",
+  "brightYellow": "#FFFFA5",
+  "cursorColor": "#F8F8F2",
+  "cyan": "#8BE9FD",
+  "foreground": "#F8F8F2",
+  "green": "#50FA7B",
+  "name": "Dracula",
+  "purple": "#FF79C6",
+  "red": "#FF5555",
+  "selectionBackground": "#44475A",
+  "white": "#F8F8F2",
+  "yellow": "#F1FA8C"
+},
+```
+
+then set the font and theme as the defaults:
+
+```json
+"defaults": {
+            "colorScheme": "Dracula",
+            "fontFace": "JetBrainsMono NF"
+        },
 ```
 
 ## Themes and fonts being used
